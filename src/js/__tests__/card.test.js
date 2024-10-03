@@ -1,4 +1,3 @@
-
 import paymentSystem from '../card';
 
 test('return amex', () => {
