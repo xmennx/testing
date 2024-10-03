@@ -4,6 +4,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
+  entry: './src/index.js',
   target: 'web',
   devtool: 'inline-source-map',
   output: {
@@ -11,7 +12,7 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: path.resolve(__dirname, '/dist'),
+    contentBase: path.resolve(__dirname, 'dist'),
     open: true,
     compress: true,
     port: 9000,
