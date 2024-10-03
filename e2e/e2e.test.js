@@ -15,7 +15,7 @@ describe('Credit Card Validator form', () => {
         devtools: true,
       });
     } catch (e) {
-      console.error(e);
+      console.error(e); // eslint-disable-line no-console
     }
     page = await browser.newPage();
   });

@@ -10,6 +10,7 @@ export default function validCreditCard(setValue) {
     const cDigit = value.charAt(n);
     let nDigit = parseInt(cDigit, 10);
 
+    /* eslint-disable no-cond-assign */
     if (bEven && (nDigit *= 2) > 9) {
       nDigit -= 9;
     }
